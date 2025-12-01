@@ -43,5 +43,11 @@
       "pre-commit": "lint-staged",
       "pre-push": "npm run lint && npm run format"
     }
+  },
+  "lint-staged": {
+    "app/**/*.{js,jsx,ts,tsx,json,css,md}": [
+      "npm run lint",
+      "npm run format"
+    ]
   }
 }
